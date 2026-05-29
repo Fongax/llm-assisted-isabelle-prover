@@ -1,6 +1,7 @@
 # LLM-Assisted Isabelle/HOL Prover
 
 A reproducible research artifact for verifier-guided LLM-assisted theorem proving in Isabelle/HOL. The system uses language models to propose proof tactics and proof fragments, while Isabelle/HOL remains the trusted verifier for accepted proofs.
+
 This project builds on a provided starter repository for LLM-assisted Isabelle/HOL theorem proving. The original starter README is preserved in `docs/baseline/README_original.md`, with provenance notes in `docs/baseline/BASELINE_PROVENANCE.md`.
 
 ## Features
