@@ -1,0 +1,6 @@
+goal,success,elapsed_s,mode,model,outline_chars,fills,failed_holes,had_sorry,verified_ok
+map f (xs @ ys) = map f xs @ map f ys,True,340.5798,auto,qwen2.5-coder:7b,54,1,0,False,True
+[] @ xs = xs,True,114.7197,auto,qwen2.5-coder:7b,99,0,0,False,True
+rev (rev xs) = xs,False,133.4185,auto,qwen2.5-coder:7b,150,0,1,False,False
+length (xs @ ys) = length xs + length ys,True,193.8933,auto,qwen2.5-coder:7b,57,1,0,False,True
+xs @ [] = xs,True,166.0676,auto,qwen2.5-coder:7b,174,1,0,False,True

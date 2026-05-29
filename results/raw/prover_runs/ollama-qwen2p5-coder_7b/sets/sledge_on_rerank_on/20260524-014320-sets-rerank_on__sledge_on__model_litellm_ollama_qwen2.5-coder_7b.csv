@@ -1,0 +1,9 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+A ⊆ A ∪ B,True,1,15.929503917694092,litellm:ollama/qwen2.5-coder:7b,False,30,2
+A ∩ B ⊆ A,True,1,14.661735773086548,litellm:ollama/qwen2.5-coder:7b,False,33,2
+(A ⊆ B ∧ B ⊆ A) ⟹ A = B,True,1,17.07926368713379,litellm:ollama/qwen2.5-coder:7b,False,37,2
+set (xs @ ys) = set xs ∪ set ys,True,1,14.657525777816772,litellm:ollama/qwen2.5-coder:7b,False,40,2
+A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C),True,1,19.167084455490112,litellm:ollama/qwen2.5-coder:7b,False,44,2
+(A ⊆ B ∧ B ⊆ C) ⟹ A ⊆ C,True,1,18.12510395050049,litellm:ollama/qwen2.5-coder:7b,False,48,2
+{x} ∪ A = insert x A,True,1,14.033053636550903,litellm:ollama/qwen2.5-coder:7b,False,51,2
+x ∈ insert y A ⟷ (x = y ∨ x ∈ A),True,1,15.730094194412231,litellm:ollama/qwen2.5-coder:7b,False,54,2

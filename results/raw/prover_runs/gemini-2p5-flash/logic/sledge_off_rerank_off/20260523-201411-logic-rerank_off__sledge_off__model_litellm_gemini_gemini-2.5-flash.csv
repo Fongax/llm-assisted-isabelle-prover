@@ -1,0 +1,6 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+(¬ ¬ P) ⟷ P,True,1,10.579594850540161,litellm:gemini/gemini-2.5-flash,False,2,2
+(P ∧ True) ⟷ P,True,1,4.218146324157715,litellm:gemini/gemini-2.5-flash,False,4,2
+(P ∨ False) ⟷ P,True,1,4.203191041946411,litellm:gemini/gemini-2.5-flash,False,6,2
+(P ⟶ Q) ⟷ (¬ P ∨ Q),True,1,7.336092472076416,litellm:gemini/gemini-2.5-flash,False,8,2
+(True ∧ P) ⟷ P,True,1,4.2074713706970215,litellm:gemini/gemini-2.5-flash,False,10,2

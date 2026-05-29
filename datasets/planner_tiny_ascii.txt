@@ -1,0 +1,5 @@
+xs @ [] = xs
+[] @ xs = xs
+rev (rev xs) = xs
+map f (xs @ ys) = map f xs @ map f ys
+length (xs @ ys) = length xs + length ys

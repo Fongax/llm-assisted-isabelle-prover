@@ -1,0 +1,9 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+A ⊆ A ∪ B,True,1,13.799933671951294,litellm:openai/gpt-5.5,False,2,2
+A ∩ B ⊆ A,True,1,9.107014894485474,litellm:openai/gpt-5.5,False,4,2
+(A ⊆ B ∧ B ⊆ A) ⟹ A = B,True,1,14.309340000152588,litellm:openai/gpt-5.5,False,8,2
+set (xs @ ys) = set xs ∪ set ys,True,1,10.230548620223999,litellm:openai/gpt-5.5,False,10,2
+A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C),True,1,17.39328169822693,litellm:openai/gpt-5.5,False,15,2
+(A ⊆ B ∧ B ⊆ C) ⟹ A ⊆ C,True,1,15.718964576721191,litellm:openai/gpt-5.5,False,20,2
+{x} ∪ A = insert x A,True,1,10.161415338516235,litellm:openai/gpt-5.5,False,22,2
+x ∈ insert y A ⟷ (x = y ∨ x ∈ A),True,1,9.687982082366943,litellm:openai/gpt-5.5,False,24,2

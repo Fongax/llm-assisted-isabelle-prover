@@ -1,0 +1,6 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+(¬ ¬ P) ⟷ P,True,1,6.613070249557495,qwen3-coder:30b,False,3,2
+(P ∧ True) ⟷ P,True,1,6.3061203956604,qwen3-coder:30b,False,6,2
+(P ∨ False) ⟷ P,True,1,6.306299209594727,qwen3-coder:30b,False,9,2
+(P ⟶ Q) ⟷ (¬ P ∨ Q),True,1,6.30662727355957,qwen3-coder:30b,False,12,2
+(True ∧ P) ⟷ P,True,1,6.320364713668823,qwen3-coder:30b,False,15,2

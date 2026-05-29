@@ -1,0 +1,10 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+Suc n ≠ 0,True,1,9.617475032806396,litellm:openai/gpt-5.4-mini,False,2,2
+max n n = n,False,1,10.584392547607422,litellm:openai/gpt-5.4-mini,False,7,1
+n + m = m + n,False,1,15.707796335220337,litellm:openai/gpt-5.4-mini,False,12,1
+n ≤ n,False,1,12.961721420288086,litellm:openai/gpt-5.4-mini,False,17,1
+n + (m + k) = (n + m) + k,False,1,12.624313831329346,litellm:openai/gpt-5.4-mini,False,23,1
+n + Suc m = Suc (n + m),True,1,4.230862617492676,litellm:openai/gpt-5.4-mini,False,25,2
+min n n = n,False,1,608.685798406601,litellm:openai/gpt-5.4-mini,False,30,1
+0 + n = n,False,1,12.730749130249023,litellm:openai/gpt-5.4-mini,False,36,1
+n + 0 = n,False,1,10.549365043640137,litellm:openai/gpt-5.4-mini,False,41,1

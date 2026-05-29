@@ -1,0 +1,10 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+Suc n ≠ 0,True,1,9.603026151657104,litellm:gemini/gemini-2.5-flash,False,2,2
+max n n = n,True,2,40.3740451335907,litellm:gemini/gemini-2.5-flash,False,21,3
+n + m = m + n,False,1,22.532217264175415,litellm:gemini/gemini-2.5-flash,False,29,1
+n ≤ n,False,1,18.9573016166687,litellm:gemini/gemini-2.5-flash,False,38,1
+n + (m + k) = (n + m) + k,False,1,18.220157146453857,litellm:gemini/gemini-2.5-flash,False,45,1
+n + Suc m = Suc (n + m),True,1,4.214189767837524,litellm:gemini/gemini-2.5-flash,False,47,2
+min n n = n,True,1,29.499165058135986,litellm:gemini/gemini-2.5-flash,False,61,2
+0 + n = n,False,1,14.765208959579468,litellm:gemini/gemini-2.5-flash,False,68,1
+n + 0 = n,False,1,610.7147703170776,litellm:gemini/gemini-2.5-flash,False,73,1

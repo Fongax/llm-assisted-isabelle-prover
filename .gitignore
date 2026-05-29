@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Isabelle / local runtime
+logs/
+tmp/
+*.log
+*.tmp
+*.bak
+*.bak*
+*pathbak*
+*.old
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large/local model artifacts
+*.gguf
+*.bin
+ollama_models/

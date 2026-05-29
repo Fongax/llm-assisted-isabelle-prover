@@ -1,0 +1,10 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+Suc n ≠ 0,True,1,7.7370710372924805,qwen3-coder:30b,False,80,2
+max n n = n,True,1,25.212027549743652,qwen3-coder:30b,False,91,2
+n + m = m + n,False,1,32.002301931381226,qwen3-coder:30b,False,101,1
+n ≤ n,False,1,31.555565118789673,qwen3-coder:30b,False,110,1
+n + (m + k) = (n + m) + k,False,1,30.45288372039795,qwen3-coder:30b,False,120,1
+n + Suc m = Suc (n + m),True,1,6.3272929191589355,qwen3-coder:30b,False,123,2
+min n n = n,True,1,25.223913431167603,qwen3-coder:30b,False,134,2
+0 + n = n,False,1,30.573092699050903,qwen3-coder:30b,False,144,1
+n + 0 = n,False,1,30.46579599380493,qwen3-coder:30b,False,154,1

@@ -1,0 +1,6 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+(¬ ¬ P) ⟷ P,True,1,5.6937949657440186,litellm:openai/gpt-5.4-mini,False,12,2
+(P ∧ True) ⟷ P,True,1,4.211279392242432,litellm:openai/gpt-5.4-mini,False,14,2
+(P ∨ False) ⟷ P,True,1,4.160224437713623,litellm:openai/gpt-5.4-mini,False,16,2
+(P ⟶ Q) ⟷ (¬ P ∨ Q),True,1,4.268133640289307,litellm:openai/gpt-5.4-mini,False,18,2
+(True ∧ P) ⟷ P,True,1,4.203331470489502,litellm:openai/gpt-5.4-mini,False,20,2

@@ -1,0 +1,6 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+(¬ ¬ P) ⟷ P,True,1,20.462677001953125,litellm:ollama/qwen2.5-coder:7b,False,3,2
+(P ∧ True) ⟷ P,True,1,14.993053913116455,litellm:ollama/qwen2.5-coder:7b,False,6,2
+(P ∨ False) ⟷ P,True,1,15.65660047531128,litellm:ollama/qwen2.5-coder:7b,False,9,2
+(P ⟶ Q) ⟷ (¬ P ∨ Q),True,1,16.392165422439575,litellm:ollama/qwen2.5-coder:7b,False,12,2
+(True ∧ P) ⟷ P,True,1,15.870241165161133,litellm:ollama/qwen2.5-coder:7b,False,15,2

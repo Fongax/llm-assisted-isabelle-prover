@@ -1,0 +1,19 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+x ∈ set xs ⟹ x ∈ set (xs @ ys),True,1,10.472496271133423,litellm:gemini/gemini-2.5-flash,False,2,2
+set (xs @ ys) = set xs ∪ set ys,True,1,6.580305099487305,litellm:gemini/gemini-2.5-flash,False,4,2
+map id xs = xs,True,1,6.797857284545898,litellm:gemini/gemini-2.5-flash,False,6,2
+take (length xs) (xs @ ys) = xs,True,1,6.723407030105591,litellm:gemini/gemini-2.5-flash,False,8,2
+map f (xs @ ys) = map f xs @ map f ys,True,1,6.322699308395386,litellm:gemini/gemini-2.5-flash,False,10,2
+length (xs @ ys) = length xs + length ys,True,1,4.204395055770874,litellm:gemini/gemini-2.5-flash,False,12,2
+filter p (xs @ ys) = filter p xs @ filter p ys,True,1,7.029002904891968,litellm:gemini/gemini-2.5-flash,False,14,2
+map f (rev xs) = rev (map f xs),True,2,39.095433473587036,litellm:gemini/gemini-2.5-flash,False,32,3
+drop (length xs) (xs @ ys) = ys,True,1,6.401565313339233,litellm:gemini/gemini-2.5-flash,False,34,2
+distinct xs ⟹ distinct (rev xs),True,1,4.220311641693115,litellm:gemini/gemini-2.5-flash,False,36,2
+xs @ [] = xs,True,1,4.208162069320679,litellm:gemini/gemini-2.5-flash,False,38,2
+take n xs @ drop n xs = xs,True,1,6.372879981994629,litellm:gemini/gemini-2.5-flash,False,40,2
+[] @ xs = xs,True,1,4.2065794467926025,litellm:gemini/gemini-2.5-flash,False,42,2
+x ∈ set ys ⟹ x ∈ set (xs @ ys),True,1,4.232982397079468,litellm:gemini/gemini-2.5-flash,False,44,2
+map f (filter p xs) = filter (λx. p x) (map f xs),False,5,76.079594373703,litellm:gemini/gemini-2.5-flash,False,77,5
+length (rev xs) = length xs,True,1,6.756461143493652,litellm:gemini/gemini-2.5-flash,False,79,2
+rev (rev xs) = xs,True,1,4.2211456298828125,litellm:gemini/gemini-2.5-flash,False,81,2
+rev (xs @ ys) = rev ys @ rev xs,True,1,4.2067883014678955,litellm:gemini/gemini-2.5-flash,False,83,2

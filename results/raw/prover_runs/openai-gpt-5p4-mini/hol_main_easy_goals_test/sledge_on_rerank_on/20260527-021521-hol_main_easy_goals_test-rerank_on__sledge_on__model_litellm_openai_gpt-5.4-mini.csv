@@ -1,0 +1,101 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+surj f ⟷ (∀y. ∃x. f x = y),True,1,27.804835081100464,litellm:openai/gpt-5.4-mini,False,498,2
+(f ∘ (g ∘ h)) = ((f ∘ g) ∘ h),True,1,8.442965030670166,litellm:openai/gpt-5.4-mini,False,502,2
+(a::int) + 0 = a,True,1,10.024997234344482,litellm:openai/gpt-5.4-mini,False,505,2
+(∀x. P x ⟶ Q x) ⟶ ((∃x. P x) ⟶ (∃x. Q x)),True,1,8.439846515655518,litellm:openai/gpt-5.4-mini,False,509,2
+map fst (zip xs ys) = take (min (length xs) (length ys)) xs,True,1,25.221783876419067,litellm:openai/gpt-5.4-mini,False,520,2
+length (replicate n x) = n,True,1,6.330474853515625,litellm:openai/gpt-5.4-mini,False,523,2
+(A ⟶ (B ⟶ C)) ⟶ (A ∧ B ⟶ C),True,1,6.3324151039123535,litellm:openai/gpt-5.4-mini,False,526,2
+min (m::nat) n + k = min (m + k) (n + k),True,1,6.333838224411011,litellm:openai/gpt-5.4-mini,False,529,2
+(A - B) ∪ (A ∩ B) = A,True,1,8.442646503448486,litellm:openai/gpt-5.4-mini,False,533,2
+(min (m::nat) n) + (max m n) = m + n,True,1,6.358967542648315,litellm:openai/gpt-5.4-mini,False,536,2
+(0::nat) + m = m,True,1,18.153773069381714,litellm:openai/gpt-5.4-mini,False,539,2
+(if A then B else B) = B,True,1,6.33144998550415,litellm:openai/gpt-5.4-mini,False,542,2
+take n (take m xs) = take (min n m) xs,True,1,6.33286452293396,litellm:openai/gpt-5.4-mini,False,545,2
+drop n (drop m xs) = drop (n + m) xs,True,1,12.06430196762085,litellm:openai/gpt-5.4-mini,False,548,2
+(m::nat) + 0 = m,True,1,6.349349737167358,litellm:openai/gpt-5.4-mini,False,551,2
+(f(x := f x)) = f,True,1,6.33388614654541,litellm:openai/gpt-5.4-mini,False,554,2
+map id xs = xs,True,1,6.328397035598755,litellm:openai/gpt-5.4-mini,False,557,2
+0 + (a::int) = a,False,1,509.3154797554016,litellm:openai/gpt-5.4-mini,False,558,1
+min (m::nat) n ≤ m,True,1,6.466556072235107,litellm:openai/gpt-5.4-mini,False,561,2
+Range (r O s) ⊆ Range s,True,1,11.340375900268555,litellm:openai/gpt-5.4-mini,False,565,2
+Id O r = r,True,1,6.330827951431274,litellm:openai/gpt-5.4-mini,False,568,2
+f ` (A ∩ B) ⊆ (f ` A) ∩ (f ` B),True,1,10.868481397628784,litellm:openai/gpt-5.4-mini,False,572,2
+converse (r O s) = (converse s) O (converse r),True,1,8.470657587051392,litellm:openai/gpt-5.4-mini,False,576,2
+"case_prod f (x,y) = f x y",True,1,6.343191623687744,litellm:openai/gpt-5.4-mini,False,579,2
+length ([m..<m+n]) = n,True,1,30.83231019973755,litellm:openai/gpt-5.4-mini,False,582,2
+map (g ∘ f) xs = map g (map f xs),True,1,6.347585439682007,litellm:openai/gpt-5.4-mini,False,585,2
+(m::nat) ≠ 0 ⟷ (∃k. m = Suc k),True,1,14.822689294815063,litellm:openai/gpt-5.4-mini,False,591,2
+x ∈ (A ∩ B) ⟷ (x ∈ A ∧ x ∈ B),True,1,6.336240291595459,litellm:openai/gpt-5.4-mini,False,594,2
+-( (a::int) - b ) = b - a,True,1,6.3388214111328125,litellm:openai/gpt-5.4-mini,False,597,2
+Domain (Id_on A) = A,True,1,10.949180364608765,litellm:openai/gpt-5.4-mini,False,600,2
+(∃x. P x ∧ Q x) ⟶ ((∃x. P x) ∧ (∃x. Q x)),True,1,8.463001251220703,litellm:openai/gpt-5.4-mini,False,604,2
+x ≠ z ⟶ (f(x := y)) z = f z,True,1,6.3358166217803955,litellm:openai/gpt-5.4-mini,False,607,2
+rev (map f xs) = map f (rev xs),True,1,27.47121024131775,litellm:openai/gpt-5.4-mini,False,620,2
+"zip (map f xs) (map g ys) = map (λp. (f (fst p), g (snd p))) (zip xs ys)",False,3,614.3826401233673,litellm:openai/gpt-5.4-mini,False,645,3
+(m::nat) + Suc n = Suc (m + n),True,1,6.464980125427246,litellm:openai/gpt-5.4-mini,False,648,2
+inj_on f A ⟷ (∀x∈A. ∀y∈A. f x = f y ⟶ x = y),True,1,56.20969033241272,litellm:openai/gpt-5.4-mini,False,659,2
+map_sum id id s = s,True,1,23.275309324264526,litellm:openai/gpt-5.4-mini,False,670,2
+filter P (rev xs) = rev (filter P xs),True,1,25.48427391052246,litellm:openai/gpt-5.4-mini,False,681,2
+((a::int) + b) - c = a + (b - c),True,1,18.35043740272522,litellm:openai/gpt-5.4-mini,False,684,2
+A ⊆ B ⟷ (A - B = {}),True,1,6.338807821273804,litellm:openai/gpt-5.4-mini,False,687,2
+Domain (r O s) ⊆ Domain r,True,1,8.47309398651123,litellm:openai/gpt-5.4-mini,False,691,2
+(g ∘ f) ` A = g ` (f ` A),False,1,577.891931772232,litellm:openai/gpt-5.4-mini,False,692,1
+(f ∘ id) = f,True,1,7.817934989929199,litellm:openai/gpt-5.4-mini,False,695,2
+(id ∘ f) = f,True,1,6.350945949554443,litellm:openai/gpt-5.4-mini,False,698,2
+{x∈A. P x ∨ Q x} = {x∈A. P x} ∪ {x∈A. Q x},True,1,8.463998317718506,litellm:openai/gpt-5.4-mini,False,702,2
+map snd (zip xs ys) = take (min (length xs) (length ys)) ys,True,1,53.72730731964111,litellm:openai/gpt-5.4-mini,False,713,2
+distinct xs ⟷ length xs = length (remdups xs),True,1,41.17160892486572,litellm:openai/gpt-5.4-mini,False,724,2
+set (filter P xs) = {x ∈ set xs. P x},True,1,8.546067237854004,litellm:openai/gpt-5.4-mini,False,727,2
+(∀x. P x) ⟷ (¬ (∃x. ¬ P x)),True,1,22.34746551513672,litellm:openai/gpt-5.4-mini,False,730,2
+Range (Id_on A) = A,True,1,74.07421612739563,litellm:openai/gpt-5.4-mini,False,733,2
+case_sum f g (Inr y) = g y,False,1,112.0358350276947,litellm:openai/gpt-5.4-mini,False,735,1
+(f(x := y)) x = y,False,1,185.0387167930603,litellm:openai/gpt-5.4-mini,False,736,1
+(¬ A ∧ ¬ B) ⟷ ¬(A ∨ B),False,1,625.7686009407043,litellm:openai/gpt-5.4-mini,False,738,1
+set (replicate n x) ⊆ {x},True,1,12.11265230178833,litellm:openai/gpt-5.4-mini,False,742,2
+(A - B) ∩ B = {},True,1,8.462168216705322,litellm:openai/gpt-5.4-mini,False,746,2
+(λx. x) = id,True,1,28.09501576423645,litellm:openai/gpt-5.4-mini,False,751,2
+drop n (xs @ ys) = (drop n xs) @ (drop (n - length xs) ys),True,1,23.92026162147522,litellm:openai/gpt-5.4-mini,False,754,2
+(Suc m ≤ Suc n) ⟷ (m ≤ n),True,1,6.341669797897339,litellm:openai/gpt-5.4-mini,False,757,2
+f ` (A ∪ B) = (f ` A) ∪ (f ` B),True,1,40.63795733451843,litellm:openai/gpt-5.4-mini,False,762,2
+remdups (remdups xs) = remdups xs,False,1,93.31195449829102,litellm:openai/gpt-5.4-mini,False,764,1
+(A × (B ∩ C)) = (A × B) ∩ (A × C),False,1,149.73871207237244,litellm:openai/gpt-5.4-mini,False,765,1
+(A ∧ (B ∨ C)) ⟶ ((A ∧ B) ∨ (A ∧ C)),True,1,102.40371417999268,litellm:openai/gpt-5.4-mini,False,768,2
+((A ⟶ C) ∧ (B ⟶ C)) ⟶ (A ∨ B ⟶ C),False,1,104.25648212432861,litellm:openai/gpt-5.4-mini,False,771,1
+set (rev xs) = set xs,False,1,104.67408585548401,litellm:openai/gpt-5.4-mini,False,772,1
+(m::nat) ≤ n ⟷ (∃k. m + k = n),False,1,615.1706449985504,litellm:openai/gpt-5.4-mini,False,773,1
+{x∈A. True} = A,True,1,63.62498927116394,litellm:openai/gpt-5.4-mini,False,776,2
+sum_list (map (λ_. (k::nat)) xs) = k * length xs,True,2,594.6161904335022,litellm:openai/gpt-5.4-mini,False,794,3
+inj f ⟷ (∀x y. f x = f y ⟶ x = y),True,1,46.33902144432068,litellm:openai/gpt-5.4-mini,False,805,2
+max (a::int) b + c = max (a + c) (b + c),True,1,21.04926347732544,litellm:openai/gpt-5.4-mini,False,808,2
+{x∈A. False} = {},True,1,66.49462723731995,litellm:openai/gpt-5.4-mini,False,811,2
+(A ∧ (B ⟶ C)) ⟶ ((A ∧ B) ⟶ C),False,1,97.29078388214111,litellm:openai/gpt-5.4-mini,False,813,1
+"snd (x,y) = y",False,1,113.05820345878601,litellm:openai/gpt-5.4-mini,False,814,1
+take n xs = take n (xs @ ys) ⟷ n ≤ length xs,False,1,110.68103814125061,litellm:openai/gpt-5.4-mini,False,815,1
+(a::int) + (b + c) = (a + b) + c,False,1,109.20828866958618,litellm:openai/gpt-5.4-mini,False,817,1
+concat (map (λx. [x]) xs) = xs,False,1,111.00101685523987,litellm:openai/gpt-5.4-mini,False,818,1
+min (a::int) b + c = min (a + c) (b + c),False,1,110.9141857624054,litellm:openai/gpt-5.4-mini,False,819,1
+((A ∩ B) × C) = (A × C) ∩ (B × C),False,1,159.21926474571228,litellm:openai/gpt-5.4-mini,False,820,1
+max (m::nat) n + k = max (m + k) (n + k),False,1,683.9129679203033,litellm:openai/gpt-5.4-mini,False,821,1
+abs ((a::int) - c) ≤ abs (a - b) + abs (b - c),True,1,39.044015884399414,litellm:openai/gpt-5.4-mini,False,824,2
+m ≤ max (m::nat) n,True,1,21.058209657669067,litellm:openai/gpt-5.4-mini,False,827,2
+length (zip xs ys) = min (length xs) (length ys),True,1,6.352424383163452,litellm:openai/gpt-5.4-mini,False,830,2
+(r O s) O t = r O (s O t),True,1,27.98067593574524,litellm:openai/gpt-5.4-mini,False,835,2
+x ∈ (A ∪ B) ⟷ (x ∈ A ∨ x ∈ B),True,1,38.43925905227661,litellm:openai/gpt-5.4-mini,False,838,2
+abs ((a::int) + b) = abs (b + a),True,1,87.2288429737091,litellm:openai/gpt-5.4-mini,False,841,2
+map_option id o = o,False,1,81.24141359329224,litellm:openai/gpt-5.4-mini,False,845,1
+(A ⟶ B) ⟶ (¬B ⟶ ¬A),False,1,96.98873949050903,litellm:openai/gpt-5.4-mini,False,847,1
+map f (concat xss) = concat (map (map f) xss),False,1,147.8470482826233,litellm:openai/gpt-5.4-mini,False,848,1
+(m::nat) * (n + k) = m*n + m*k,False,1,161.23228526115417,litellm:openai/gpt-5.4-mini,False,849,1
+(f = g) ⟷ (∀x. f x = g x),False,1,112.18945479393005,litellm:openai/gpt-5.4-mini,False,851,1
+(m::nat) ≤ n ⟶ m ≤ n + k,False,1,114.36785745620728,litellm:openai/gpt-5.4-mini,False,852,1
+((a::int) - b) + c = a + (c - b),False,1,612.7896482944489,litellm:openai/gpt-5.4-mini,False,853,1
+Pow A ⊆ Pow B ⟷ A ⊆ B,True,1,29.06307888031006,litellm:openai/gpt-5.4-mini,False,858,2
+{x∈A. P x ∧ Q x} = {x∈A. P x} ∩ {x∈A. Q x},True,1,42.96905303001404,litellm:openai/gpt-5.4-mini,False,862,2
+converse Id = Id,True,1,22.37724542617798,litellm:openai/gpt-5.4-mini,False,865,2
+r O Id = r,True,1,88.52582812309265,litellm:openai/gpt-5.4-mini,False,868,2
+Id_on A ⊆ Id,False,1,101.46764898300171,litellm:openai/gpt-5.4-mini,False,869,1
+"fst (x,y) = x",False,1,137.77823448181152,litellm:openai/gpt-5.4-mini,False,870,1
+(A ⟶ B) ⟷ (¬A ∨ B),False,1,100.38342380523682,litellm:openai/gpt-5.4-mini,False,872,1
+Pow A ∩ Pow B = Pow (A ∩ B),False,1,101.9490647315979,litellm:openai/gpt-5.4-mini,False,873,1
+map Suc ([m..<m+n]) = [Suc m ..< Suc (m+n)],False,1,133.7421259880066,litellm:openai/gpt-5.4-mini,False,874,1

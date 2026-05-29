@@ -1,0 +1,21 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+{x∈A. True} = A,True,1,18.744065761566162,litellm:ollama/qwen2.5-coder:7b,False,70,2
+(A ∧ (B ∨ C)) ⟶ ((A ∧ B) ∨ (A ∧ C)),True,1,19.0759174823761,litellm:ollama/qwen2.5-coder:7b,False,73,2
+Pow A ∩ Pow B = Pow (A ∩ B),True,1,18.12529468536377,litellm:ollama/qwen2.5-coder:7b,False,76,2
+(A ⟶ B) ⟶ (¬B ⟶ ¬A),True,1,20.403705835342407,litellm:ollama/qwen2.5-coder:7b,False,80,2
+(∀x. P x ⟶ Q x) ⟶ ((∃x. P x) ⟶ (∃x. Q x)),True,1,22.54552912712097,litellm:ollama/qwen2.5-coder:7b,False,84,2
+Pow A ⊆ Pow B ⟷ A ⊆ B,True,1,23.407349109649658,litellm:ollama/qwen2.5-coder:7b,False,88,2
+(A - B) ∪ (A ∩ B) = A,True,1,19.386011362075806,litellm:ollama/qwen2.5-coder:7b,False,92,2
+{x∈A. P x ∨ Q x} = {x∈A. P x} ∪ {x∈A. Q x},True,1,21.787066221237183,litellm:ollama/qwen2.5-coder:7b,False,96,2
+((A ⟶ C) ∧ (B ⟶ C)) ⟶ (A ∨ B ⟶ C),True,1,19.009312868118286,litellm:ollama/qwen2.5-coder:7b,False,99,2
+A ⊆ B ⟷ (A - B = {}),True,1,16.740954875946045,litellm:ollama/qwen2.5-coder:7b,False,102,2
+{x∈A. P x ∧ Q x} = {x∈A. P x} ∩ {x∈A. Q x},True,1,23.956166982650757,litellm:ollama/qwen2.5-coder:7b,False,106,2
+(if A then B else B) = B,True,1,15.664910793304443,litellm:ollama/qwen2.5-coder:7b,False,109,2
+(A ⟶ (B ⟶ C)) ⟶ (A ∧ B ⟶ C),True,1,18.561502933502197,litellm:ollama/qwen2.5-coder:7b,False,112,2
+(f = g) ⟷ (∀x. f x = g x),True,1,19.090453147888184,litellm:ollama/qwen2.5-coder:7b,False,116,2
+(¬ A ∧ ¬ B) ⟷ ¬(A ∨ B),True,1,18.291054725646973,litellm:ollama/qwen2.5-coder:7b,False,119,2
+(A - B) ∩ B = {},True,1,20.675185918807983,litellm:ollama/qwen2.5-coder:7b,False,123,2
+(∀x. P x) ⟷ (¬ (∃x. ¬ P x)),True,1,17.224481344223022,litellm:ollama/qwen2.5-coder:7b,False,126,2
+(∃x. P x ∧ Q x) ⟶ ((∃x. P x) ∧ (∃x. Q x)),True,1,22.09858226776123,litellm:ollama/qwen2.5-coder:7b,False,130,2
+(A ∧ (B ⟶ C)) ⟶ ((A ∧ B) ⟶ C),True,1,17.480103492736816,litellm:ollama/qwen2.5-coder:7b,False,133,2
+(A ⟶ B) ⟷ (¬A ∨ B),True,1,17.06795835494995,litellm:ollama/qwen2.5-coder:7b,False,136,2

@@ -1,0 +1,19 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+x ∈ set xs ⟹ x ∈ set (xs @ ys),True,1,6.527184963226318,qwen3-coder:30b,False,3,2
+set (xs @ ys) = set xs ∪ set ys,True,1,6.316555500030518,qwen3-coder:30b,False,6,2
+map id xs = xs,True,1,6.312672138214111,qwen3-coder:30b,False,9,2
+take (length xs) (xs @ ys) = xs,True,1,8.418943166732788,qwen3-coder:30b,False,12,2
+map f (xs @ ys) = map f xs @ map f ys,True,1,6.31286358833313,qwen3-coder:30b,False,15,2
+length (xs @ ys) = length xs + length ys,True,1,6.309626817703247,qwen3-coder:30b,False,18,2
+filter p (xs @ ys) = filter p xs @ filter p ys,True,1,6.3259806632995605,qwen3-coder:30b,False,21,2
+map f (rev xs) = rev (map f xs),True,1,25.227245092391968,qwen3-coder:30b,False,32,2
+drop (length xs) (xs @ ys) = ys,True,1,8.782262325286865,qwen3-coder:30b,False,35,2
+distinct xs ⟹ distinct (rev xs),True,1,6.30681300163269,qwen3-coder:30b,False,38,2
+xs @ [] = xs,True,1,6.309038162231445,qwen3-coder:30b,False,41,2
+take n xs @ drop n xs = xs,True,1,8.42939805984497,qwen3-coder:30b,False,44,2
+[] @ xs = xs,True,1,6.3129072189331055,qwen3-coder:30b,False,47,2
+x ∈ set ys ⟹ x ∈ set (xs @ ys),True,1,6.3064866065979,qwen3-coder:30b,False,50,2
+map f (filter p xs) = filter (λx. p x) (map f xs),False,2,52.17819404602051,qwen3-coder:30b,False,68,2
+length (rev xs) = length xs,True,1,6.2788450717926025,qwen3-coder:30b,False,71,2
+rev (rev xs) = xs,True,1,6.27026891708374,qwen3-coder:30b,False,74,2
+rev (xs @ ys) = rev ys @ rev xs,True,1,8.477053165435791,qwen3-coder:30b,False,77,2

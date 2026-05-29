@@ -1,0 +1,19 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+x ∈ set xs ⟹ x ∈ set (xs @ ys),True,1,39.179190158843994,litellm:ollama/qwen2.5-coder:7b,False,2,2
+set (xs @ ys) = set xs ∪ set ys,True,1,10.657703638076782,litellm:ollama/qwen2.5-coder:7b,False,4,2
+map id xs = xs,True,1,11.623091697692871,litellm:ollama/qwen2.5-coder:7b,False,6,2
+take (length xs) (xs @ ys) = xs,True,1,12.991945743560791,litellm:ollama/qwen2.5-coder:7b,False,8,2
+map f (xs @ ys) = map f xs @ map f ys,True,1,13.349326133728027,litellm:ollama/qwen2.5-coder:7b,False,10,2
+length (xs @ ys) = length xs + length ys,True,1,12.598915815353394,litellm:ollama/qwen2.5-coder:7b,False,12,2
+filter p (xs @ ys) = filter p xs @ filter p ys,True,1,13.151384353637695,litellm:ollama/qwen2.5-coder:7b,False,14,2
+map f (rev xs) = rev (map f xs),False,1,91.53788924217224,litellm:ollama/qwen2.5-coder:7b,True,26,2
+drop (length xs) (xs @ ys) = ys,True,1,34.71945858001709,litellm:ollama/qwen2.5-coder:7b,False,28,2
+distinct xs ⟹ distinct (rev xs),True,1,14.271464586257935,litellm:ollama/qwen2.5-coder:7b,False,30,2
+xs @ [] = xs,True,1,13.251438856124878,litellm:ollama/qwen2.5-coder:7b,False,32,2
+take n xs @ drop n xs = xs,True,1,12.610646486282349,litellm:ollama/qwen2.5-coder:7b,False,34,2
+[] @ xs = xs,True,1,11.748664855957031,litellm:ollama/qwen2.5-coder:7b,False,36,2
+x ∈ set ys ⟹ x ∈ set (xs @ ys),True,1,12.912509441375732,litellm:ollama/qwen2.5-coder:7b,False,38,2
+map f (filter p xs) = filter (λx. p x) (map f xs),False,1,85.90277743339539,litellm:ollama/qwen2.5-coder:7b,False,47,1
+length (rev xs) = length xs,True,1,33.73035669326782,litellm:ollama/qwen2.5-coder:7b,False,49,2
+rev (rev xs) = xs,True,1,13.006506443023682,litellm:ollama/qwen2.5-coder:7b,False,51,2
+rev (xs @ ys) = rev ys @ rev xs,True,1,13.47602891921997,litellm:ollama/qwen2.5-coder:7b,False,53,2

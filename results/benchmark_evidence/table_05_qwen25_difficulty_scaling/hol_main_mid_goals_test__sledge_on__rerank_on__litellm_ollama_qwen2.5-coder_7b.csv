@@ -1,0 +1,101 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+trancl (r ∪ s) = trancl (trancl r ∪ trancl s),True,1,45.33789300918579,litellm:ollama/qwen2.5-coder:7b,False,638,2
+r ⊆ s ⟹ rtrancl r ⊆ rtrancl s,True,1,38.22896099090576,litellm:ollama/qwen2.5-coder:7b,False,649,2
+case_sum f g (Inl x) = f x,True,1,17.835088968276978,litellm:ollama/qwen2.5-coder:7b,False,652,2
+((P ⟶ Q) ∧ (Q ⟶ R)) ⟶ (P ⟶ R),True,1,21.010979652404785,litellm:ollama/qwen2.5-coder:7b,False,655,2
+(m + n) - n = m,False,1,115.78140878677368,litellm:ollama/qwen2.5-coder:7b,False,666,1
+rev (rev xs) = xs,True,1,38.90449857711792,litellm:ollama/qwen2.5-coder:7b,False,669,2
+(∃x. P x ∧ Q x) ⟶ (∃x. P x),True,1,21.27566909790039,litellm:ollama/qwen2.5-coder:7b,False,673,2
+0 < n ⟶ m div n * n ≤ m,False,1,121.85564184188843,litellm:ollama/qwen2.5-coder:7b,False,684,1
+(A ∩ (B ∪ C)) = (A ∩ B) ∪ (A ∩ C),True,1,55.78347873687744,litellm:ollama/qwen2.5-coder:7b,False,688,2
+(a::int) ≤ b ∨ b ≤ a,True,1,22.196365118026733,litellm:ollama/qwen2.5-coder:7b,False,692,2
+abs (a::int) ≥ 0,True,1,17.774128913879395,litellm:ollama/qwen2.5-coder:7b,False,695,2
+(P ∧ (Q ∨ R)) ⟶ ((P ∧ Q) ∨ (P ∧ R)),True,1,21.438740015029907,litellm:ollama/qwen2.5-coder:7b,False,698,2
+rev (map f xs) = map f (rev xs),True,1,39.66175174713135,litellm:ollama/qwen2.5-coder:7b,False,711,2
+length (rev xs) = length xs,True,1,19.698031187057495,litellm:ollama/qwen2.5-coder:7b,False,714,2
+n ≤ m ⟶ m - (m - n) = n,False,1,120.37299799919128,litellm:ollama/qwen2.5-coder:7b,False,723,1
+rev (xs @ ys) = rev ys @ rev xs,True,1,45.03558111190796,litellm:ollama/qwen2.5-coder:7b,False,726,2
+take (length xs) (xs @ ys) = xs,True,1,20.89118242263794,litellm:ollama/qwen2.5-coder:7b,False,729,2
+case_sum f g (Inr y) = g y,True,1,18.239864587783813,litellm:ollama/qwen2.5-coder:7b,False,732,2
+abs (-a) = abs a,False,1,120.46754360198975,litellm:ollama/qwen2.5-coder:7b,False,743,1
+(Id O r) = r,True,1,48.87338733673096,litellm:ollama/qwen2.5-coder:7b,False,746,2
+finite A ⟹ card (insert a A) = (if a∈A then card A else Suc (card A)),True,1,44.79189395904541,litellm:ollama/qwen2.5-coder:7b,False,757,2
+(A ⊆ B ∧ B ⊆ C) ⟶ (A ⊆ C),True,1,22.376882314682007,litellm:ollama/qwen2.5-coder:7b,False,761,2
+A ⊆ f -` (f ` A),True,1,23.79231595993042,litellm:ollama/qwen2.5-coder:7b,False,765,2
+map_sum f g (Inl x) = Inl (f x),True,1,19.189298629760742,litellm:ollama/qwen2.5-coder:7b,False,768,2
+(a::nat) ≤ b ⟶ a ≤ b + c,True,1,18.25779128074646,litellm:ollama/qwen2.5-coder:7b,False,771,2
+drop (length xs) (xs @ ys) = ys,True,1,17.524944067001343,litellm:ollama/qwen2.5-coder:7b,False,774,2
+(a::nat) ≤ b ⟶ a div c ≤ b div c ∨ c=0,True,1,38.59825325012207,litellm:ollama/qwen2.5-coder:7b,False,785,2
+finite A ⟹ card (A - {a}) = (if a∈A then card A - 1 else card A),True,1,21.062052965164185,litellm:ollama/qwen2.5-coder:7b,False,788,2
+"(a,b) = (c,d) ⟶ a=c ∧ b=d",True,1,18.436041116714478,litellm:ollama/qwen2.5-coder:7b,False,791,2
+(f ` A) ∩ (f ` B) ⊆ f ` (A ∩ B),False,1,1191.5124378204346,litellm:ollama/qwen2.5-coder:7b,False,797,1
+(∃x. P x) ⟶ (∃y. P y ∧ ∃z. P z),False,1,140.9615592956543,litellm:ollama/qwen2.5-coder:7b,False,806,1
+map f (xs @ ys) = map f xs @ map f ys,True,1,47.59062743186951,litellm:ollama/qwen2.5-coder:7b,False,809,2
+take n (take m xs) = take (min n m) xs,True,1,24.099918842315674,litellm:ollama/qwen2.5-coder:7b,False,812,2
+concat (map (λx. [x]) xs) = xs,True,1,18.57315993309021,litellm:ollama/qwen2.5-coder:7b,False,815,2
+abs (a*b) = abs a * abs b,False,1,112.64611601829529,litellm:ollama/qwen2.5-coder:7b,False,826,1
+Range (r O s) = Range r ∩ (r `` (Range s)),False,1,147.04260420799255,litellm:ollama/qwen2.5-coder:7b,False,835,1
+"split f (a,b) = f a b",False,1,145.10986161231995,litellm:ollama/qwen2.5-coder:7b,False,844,1
+map (f ∘ g) xs = map f (map g xs),True,1,53.86535143852234,litellm:ollama/qwen2.5-coder:7b,False,847,2
+"fst (a,b) = a",True,1,20.052413940429688,litellm:ollama/qwen2.5-coder:7b,False,850,2
+(P ∧ False) ⟶ Q,True,1,17.864527225494385,litellm:ollama/qwen2.5-coder:7b,False,853,2
+(r O Id) = r,True,1,18.279747009277344,litellm:ollama/qwen2.5-coder:7b,False,856,2
+finite A ⟹ card (A ∪ B) + card (A ∩ B) = card A + card B,False,1,134.79329466819763,litellm:ollama/qwen2.5-coder:7b,False,859,1
+refl r ⟹ refl (r⁻¹),False,1,145.91299438476562,litellm:ollama/qwen2.5-coder:7b,False,868,1
+antisym r ⟹ antisym (r⁻¹),False,1,141.48766016960144,litellm:ollama/qwen2.5-coder:7b,False,877,1
+(A ∩ B) ∪ (A - B) = A,True,1,50.85902261734009,litellm:ollama/qwen2.5-coder:7b,False,881,2
+min (Suc n) (Suc m) = Suc (min n m),True,1,20.069660663604736,litellm:ollama/qwen2.5-coder:7b,False,884,2
+take n xs @ drop n xs = xs,True,1,20.657146215438843,litellm:ollama/qwen2.5-coder:7b,False,887,2
+drop n (drop m xs) = drop (n+m) xs,True,1,20.63325834274292,litellm:ollama/qwen2.5-coder:7b,False,890,2
+(∃x. P x) ⟶ (∀y. P y ⟶ ∃z. P z),False,1,121.09250116348267,litellm:ollama/qwen2.5-coder:7b,False,901,1
+bij f ⟹ f -` (f ` A) = A,True,1,73.56122350692749,litellm:ollama/qwen2.5-coder:7b,False,912,2
+"(case (a,b) of (x,y) ⇒ P x y) = P a b",True,1,30.4465172290802,litellm:ollama/qwen2.5-coder:7b,False,915,2
+length (map f xs) = length xs,True,1,26.66890287399292,litellm:ollama/qwen2.5-coder:7b,False,918,2
+(∀x. P x ⟶ Q) ⟶ ((∃x. P x) ⟶ Q),True,1,21.419484615325928,litellm:ollama/qwen2.5-coder:7b,False,921,2
+map id xs = xs,True,1,19.455495834350586,litellm:ollama/qwen2.5-coder:7b,False,924,2
+A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C),True,1,25.531179666519165,litellm:ollama/qwen2.5-coder:7b,False,928,2
+trans r ⟹ trans (r⁻¹),False,1,128.4541220664978,litellm:ollama/qwen2.5-coder:7b,False,937,1
+length (take n xs) ≤ n,True,1,48.8161187171936,litellm:ollama/qwen2.5-coder:7b,False,940,2
+n ≤ m ⟶ n ≤ m + k,False,1,121.9412133693695,litellm:ollama/qwen2.5-coder:7b,False,950,1
+inj f ⟹ finite A ⟹ card (f ` A) = card A,False,1,156.08662819862366,litellm:ollama/qwen2.5-coder:7b,False,959,1
+nth (xs @ ys) n = (if n < length xs then nth xs n else nth ys (n - length xs)),True,1,71.85753107070923,litellm:ollama/qwen2.5-coder:7b,False,970,2
+finite A ⟹ finite B ⟹ card (A × B) = card A * card B,True,1,23.778435230255127,litellm:ollama/qwen2.5-coder:7b,False,973,2
+(¬ ∃x. P x) ⟷ (∀x. ¬ P x),False,1,121.39066505432129,litellm:ollama/qwen2.5-coder:7b,False,982,1
+(∀x. P x ⟶ R) ⟶ ((∃x. P x) ⟶ R),True,1,52.753418922424316,litellm:ollama/qwen2.5-coder:7b,False,985,2
+max (Suc n) (Suc m) = Suc (max n m),True,1,19.99248170852661,litellm:ollama/qwen2.5-coder:7b,False,988,2
+a ≤ b ⟶ a * c ≤ b * c,False,1,121.42902970314026,litellm:ollama/qwen2.5-coder:7b,False,991,1
+A ⊆ B ⟶ (A ∩ B = A),True,1,53.686241149902344,litellm:ollama/qwen2.5-coder:7b,False,995,2
+(a::int) * (b + c) = a*b + a*c,True,1,39.59688353538513,litellm:ollama/qwen2.5-coder:7b,False,1006,2
+Domain (r O s) = Domain s ∩ (s -` (Domain r)),False,1,120.89096212387085,litellm:ollama/qwen2.5-coder:7b,False,1015,1
+the (Some x) = x,True,1,45.176976442337036,litellm:ollama/qwen2.5-coder:7b,False,1018,2
+A ⊆ B ⟶ (A ∪ B = B),True,1,23.137396812438965,litellm:ollama/qwen2.5-coder:7b,False,1022,2
+¬ (∀x∈A. P x) ⟷ (∃x∈A. ¬ P x),True,1,20.70028305053711,litellm:ollama/qwen2.5-coder:7b,False,1025,2
+"prod_case f (a,b) = f a b",False,1,121.57544231414795,litellm:ollama/qwen2.5-coder:7b,False,1035,1
+length (xs @ ys) = length xs + length ys,True,1,48.74050450325012,litellm:ollama/qwen2.5-coder:7b,False,1038,2
+map_option f (Some x) = Some (f x),True,1,23.315690994262695,litellm:ollama/qwen2.5-coder:7b,False,1041,2
+take (length xs) xs = xs,True,1,18.37570858001709,litellm:ollama/qwen2.5-coder:7b,False,1044,2
+case_option y f None = y,True,1,24.379180908203125,litellm:ollama/qwen2.5-coder:7b,False,1047,2
+finite A ⟹ card (Pow A) = 2 ^ card A,True,1,42.939770221710205,litellm:ollama/qwen2.5-coder:7b,False,1058,2
+n ≤ m ⟶ m - n + n = m,False,1,121.48801279067993,litellm:ollama/qwen2.5-coder:7b,False,1068,1
+a ≤ b ⟶ a mod c ≤ b mod c ∨ c=0,False,1,152.53267216682434,litellm:ollama/qwen2.5-coder:7b,False,1077,1
+min a b + max a b = a + b,False,1,142.71453833580017,litellm:ollama/qwen2.5-coder:7b,False,1086,1
+sum_list (xs @ ys) = sum_list xs + sum_list ys,True,1,45.57827639579773,litellm:ollama/qwen2.5-coder:7b,False,1089,2
+inj_on f A ⟹ finite A ⟹ card (f ` A) = card A,True,1,39.585742473602295,litellm:ollama/qwen2.5-coder:7b,False,1100,2
+finite A ⟹ finite B ⟹ (A ⊆ B ⟶ card A ≤ card B),True,1,41.556577920913696,litellm:ollama/qwen2.5-coder:7b,False,1111,2
+case_option y f (Some x) = f x,True,1,18.2198543548584,litellm:ollama/qwen2.5-coder:7b,False,1114,2
+map_sum f g (Inr y) = Inr (g y),True,1,19.15926957130432,litellm:ollama/qwen2.5-coder:7b,False,1117,2
+(∃x. P x ∨ Q x) ⟷ ((∃x. P x) ∨ (∃x. Q x)),True,1,24.55033278465271,litellm:ollama/qwen2.5-coder:7b,False,1121,2
+drop (length xs) xs = [],True,1,17.487847566604614,litellm:ollama/qwen2.5-coder:7b,False,1124,2
+abs (a+b) ≤ abs a + abs b,False,1,121.95702242851257,litellm:ollama/qwen2.5-coder:7b,False,1136,1
+(P ⟶ Q) ⟷ (¬ P ∨ Q),True,1,44.93406367301941,litellm:ollama/qwen2.5-coder:7b,False,1139,2
+n ≤ m ⟶ n ≤ m * k + m,False,1,121.96334433555603,litellm:ollama/qwen2.5-coder:7b,False,1151,1
+"snd (a,b) = b",True,1,43.99669051170349,litellm:ollama/qwen2.5-coder:7b,False,1154,2
+(P ⟶ (Q ⟶ R)) ⟷ ((P ∧ Q) ⟶ R),True,1,23.883139610290527,litellm:ollama/qwen2.5-coder:7b,False,1158,2
+(A - B) ∪ (A ∩ B) = A,True,1,21.447821378707886,litellm:ollama/qwen2.5-coder:7b,False,1162,2
+finite A ⟹ finite B ⟹ card (A ∪ B) ≤ card A + card B,True,1,39.98465633392334,litellm:ollama/qwen2.5-coder:7b,False,1173,2
+(f ` (A ∩ B)) ⊆ (f ` A ∩ f ` B),True,1,24.554123640060425,litellm:ollama/qwen2.5-coder:7b,False,1177,2
+sym r ⟹ sym (r⁻¹),False,1,110.9511821269989,litellm:ollama/qwen2.5-coder:7b,False,1189,1
+map_option f None = None,True,1,43.58914017677307,litellm:ollama/qwen2.5-coder:7b,False,1192,2
+(∀x∈A. P x ∧ Q x) ⟷ ((∀x∈A. P x) ∧ (∀x∈A. Q x)),True,1,25.041810512542725,litellm:ollama/qwen2.5-coder:7b,False,1196,2
+(∀x. P x) ⟶ (∀y. P y),True,1,18.926923036575317,litellm:ollama/qwen2.5-coder:7b,False,1199,2
+(a::nat) ≤ b ⟶ a + c ≤ b + c,True,1,19.066999673843384,litellm:ollama/qwen2.5-coder:7b,False,1202,2

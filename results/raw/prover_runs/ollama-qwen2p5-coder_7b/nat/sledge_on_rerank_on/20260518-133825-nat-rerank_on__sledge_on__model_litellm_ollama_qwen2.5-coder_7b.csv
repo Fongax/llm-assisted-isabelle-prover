@@ -1,0 +1,10 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+Suc n ≠ 0,True,1,15.40989875793457,litellm:ollama/qwen2.5-coder:7b,False,59,2
+max n n = n,True,1,34.7425799369812,litellm:ollama/qwen2.5-coder:7b,False,70,2
+n + m = m + n,False,1,30.667279720306396,litellm:ollama/qwen2.5-coder:7b,False,76,1
+n ≤ n,False,1,30.97742509841919,litellm:ollama/qwen2.5-coder:7b,False,81,1
+n + (m + k) = (n + m) + k,False,1,30.830227851867676,litellm:ollama/qwen2.5-coder:7b,False,86,1
+n + Suc m = Suc (n + m),True,1,15.591293573379517,litellm:ollama/qwen2.5-coder:7b,False,89,2
+min n n = n,True,1,34.6993567943573,litellm:ollama/qwen2.5-coder:7b,False,100,2
+0 + n = n,False,1,30.831801176071167,litellm:ollama/qwen2.5-coder:7b,False,104,1
+n + 0 = n,False,1,32.07095432281494,litellm:ollama/qwen2.5-coder:7b,False,110,1

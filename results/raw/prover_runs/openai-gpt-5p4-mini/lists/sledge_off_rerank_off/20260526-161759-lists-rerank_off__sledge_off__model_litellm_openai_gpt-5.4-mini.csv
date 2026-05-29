@@ -1,0 +1,19 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+x ∈ set xs ⟹ x ∈ set (xs @ ys),True,1,12.29541015625,litellm:openai/gpt-5.4-mini,False,2,2
+set (xs @ ys) = set xs ∪ set ys,True,1,4.183310270309448,litellm:openai/gpt-5.4-mini,False,4,2
+map id xs = xs,True,1,4.244446039199829,litellm:openai/gpt-5.4-mini,False,6,2
+take (length xs) (xs @ ys) = xs,True,1,6.588993549346924,litellm:openai/gpt-5.4-mini,False,8,2
+map f (xs @ ys) = map f xs @ map f ys,True,1,4.221081972122192,litellm:openai/gpt-5.4-mini,False,10,2
+length (xs @ ys) = length xs + length ys,True,1,4.175624132156372,litellm:openai/gpt-5.4-mini,False,12,2
+filter p (xs @ ys) = filter p xs @ filter p ys,True,1,4.224943399429321,litellm:openai/gpt-5.4-mini,False,14,2
+map f (rev xs) = rev (map f xs),True,2,35.6649169921875,litellm:openai/gpt-5.4-mini,False,33,3
+drop (length xs) (xs @ ys) = ys,True,1,4.2088963985443115,litellm:openai/gpt-5.4-mini,False,35,2
+distinct xs ⟹ distinct (rev xs),True,1,4.2111570835113525,litellm:openai/gpt-5.4-mini,False,37,2
+xs @ [] = xs,True,1,4.210693597793579,litellm:openai/gpt-5.4-mini,False,39,2
+take n xs @ drop n xs = xs,True,1,4.209975242614746,litellm:openai/gpt-5.4-mini,False,41,2
+[] @ xs = xs,True,1,4.210559129714966,litellm:openai/gpt-5.4-mini,False,43,2
+x ∈ set ys ⟹ x ∈ set (xs @ ys),True,1,4.223863840103149,litellm:openai/gpt-5.4-mini,False,45,2
+map f (filter p xs) = filter (λx. p x) (map f xs),False,5,76.54468870162964,litellm:openai/gpt-5.4-mini,False,89,5
+length (rev xs) = length xs,True,1,4.211458444595337,litellm:openai/gpt-5.4-mini,False,91,2
+rev (rev xs) = xs,True,1,4.230735540390015,litellm:openai/gpt-5.4-mini,False,93,2
+rev (xs @ ys) = rev ys @ rev xs,True,1,4.234194755554199,litellm:openai/gpt-5.4-mini,False,95,2

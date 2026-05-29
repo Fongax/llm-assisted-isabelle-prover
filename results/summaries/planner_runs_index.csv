@@ -1,0 +1,3 @@
+file,total,successes,success_rate,median_time_all_s,median_time_success_s,had_sorry_count,verified_ok_count,source_path
+20260518-182906-planner_tiny_ascii-mode_auto__k2__t120__repairs_on__model_qwen2.5-coder_7b__verify__strict.csv,5,0,0.0,141.2,,4,4,archives/20260524_000931/planner_results_old/20260518-182906-planner_tiny_ascii-mode_auto__k2__t120__repairs_on__model_qwen2.5-coder_7b__verify__strict.csv
+20260523-220902-planner_tiny_ascii-mode_auto__k2__t120__repairs_on__model_qwen2.5-coder_7b__verify__strict.csv,5,4,80.0,166.07,179.98,0,4,archives/20260524_000931/planner_results_old/20260523-220902-planner_tiny_ascii-mode_auto__k2__t120__repairs_on__model_qwen2.5-coder_7b__verify__strict.csv

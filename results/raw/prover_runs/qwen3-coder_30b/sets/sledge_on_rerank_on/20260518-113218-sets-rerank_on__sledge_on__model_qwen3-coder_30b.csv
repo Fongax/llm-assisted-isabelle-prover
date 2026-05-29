@@ -1,0 +1,9 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+A ⊆ A ∪ B,True,1,7.623771667480469,qwen3-coder:30b,False,30,2
+A ∩ B ⊆ A,True,1,6.306801795959473,qwen3-coder:30b,False,33,2
+(A ⊆ B ∧ B ⊆ A) ⟹ A = B,True,1,8.402194738388062,qwen3-coder:30b,False,37,2
+set (xs @ ys) = set xs ∪ set ys,True,1,6.323587417602539,qwen3-coder:30b,False,40,2
+A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C),True,1,8.416201829910278,qwen3-coder:30b,False,44,2
+(A ⊆ B ∧ B ⊆ C) ⟹ A ⊆ C,True,1,8.34711241722107,qwen3-coder:30b,False,48,2
+{x} ∪ A = insert x A,True,1,6.311047554016113,qwen3-coder:30b,False,51,2
+x ∈ insert y A ⟷ (x = y ∨ x ∈ A),True,1,6.317485094070435,qwen3-coder:30b,False,54,2

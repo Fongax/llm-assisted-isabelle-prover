@@ -1,0 +1,9 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+A ⊆ A ∪ B,True,1,9.117436408996582,litellm:gemini/gemini-2.5-flash,False,2,2
+A ∩ B ⊆ A,True,1,4.213028907775879,litellm:gemini/gemini-2.5-flash,False,4,2
+(A ⊆ B ∧ B ⊆ A) ⟹ A = B,True,1,8.417418003082275,litellm:gemini/gemini-2.5-flash,False,8,2
+set (xs @ ys) = set xs ∪ set ys,True,1,6.792086839675903,litellm:gemini/gemini-2.5-flash,False,10,2
+A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C),True,1,10.98531436920166,litellm:gemini/gemini-2.5-flash,False,14,2
+(A ⊆ B ∧ B ⊆ C) ⟹ A ⊆ C,True,1,10.577980041503906,litellm:gemini/gemini-2.5-flash,False,18,2
+{x} ∪ A = insert x A,True,1,6.523428678512573,litellm:gemini/gemini-2.5-flash,False,20,2
+x ∈ insert y A ⟷ (x = y ∨ x ∈ A),True,1,4.207531690597534,litellm:gemini/gemini-2.5-flash,False,22,2

@@ -1,0 +1,21 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+{x∈A. True} = A,False,1,49.8427472114563,litellm:ollama/qwen2.5-coder:7b,False,1,1
+(A ∧ (B ∨ C)) ⟶ ((A ∧ B) ∨ (A ∧ C)),True,1,17.60914421081543,litellm:ollama/qwen2.5-coder:7b,False,4,2
+Pow A ∩ Pow B = Pow (A ∩ B),True,1,16.955602169036865,litellm:ollama/qwen2.5-coder:7b,False,7,2
+(A ⟶ B) ⟶ (¬B ⟶ ¬A),True,1,19.583823680877686,litellm:ollama/qwen2.5-coder:7b,False,11,2
+(∀x. P x ⟶ Q x) ⟶ ((∃x. P x) ⟶ (∃x. Q x)),True,1,21.06013560295105,litellm:ollama/qwen2.5-coder:7b,False,15,2
+Pow A ⊆ Pow B ⟷ A ⊆ B,True,1,24.034669399261475,litellm:ollama/qwen2.5-coder:7b,False,19,2
+(A - B) ∪ (A ∩ B) = A,True,1,19.166314601898193,litellm:ollama/qwen2.5-coder:7b,False,23,2
+{x∈A. P x ∨ Q x} = {x∈A. P x} ∪ {x∈A. Q x},True,1,21.556496620178223,litellm:ollama/qwen2.5-coder:7b,False,27,2
+((A ⟶ C) ∧ (B ⟶ C)) ⟶ (A ∨ B ⟶ C),True,1,18.892159700393677,litellm:ollama/qwen2.5-coder:7b,False,30,2
+A ⊆ B ⟷ (A - B = {}),True,1,16.44136643409729,litellm:ollama/qwen2.5-coder:7b,False,33,2
+{x∈A. P x ∧ Q x} = {x∈A. P x} ∩ {x∈A. Q x},True,1,21.635886669158936,litellm:ollama/qwen2.5-coder:7b,False,37,2
+(if A then B else B) = B,True,1,15.576925277709961,litellm:ollama/qwen2.5-coder:7b,False,40,2
+(A ⟶ (B ⟶ C)) ⟶ (A ∧ B ⟶ C),True,1,17.734529733657837,litellm:ollama/qwen2.5-coder:7b,False,43,2
+(f = g) ⟷ (∀x. f x = g x),True,1,20.244142293930054,litellm:ollama/qwen2.5-coder:7b,False,47,2
+(¬ A ∧ ¬ B) ⟷ ¬(A ∨ B),True,1,19.035632610321045,litellm:ollama/qwen2.5-coder:7b,False,50,2
+(A - B) ∩ B = {},True,1,18.69835114479065,litellm:ollama/qwen2.5-coder:7b,False,54,2
+(∀x. P x) ⟷ (¬ (∃x. ¬ P x)),True,1,17.860814332962036,litellm:ollama/qwen2.5-coder:7b,False,57,2
+(∃x. P x ∧ Q x) ⟶ ((∃x. P x) ∧ (∃x. Q x)),True,1,21.375550031661987,litellm:ollama/qwen2.5-coder:7b,False,61,2
+(A ∧ (B ⟶ C)) ⟶ ((A ∧ B) ⟶ C),True,1,17.53086233139038,litellm:ollama/qwen2.5-coder:7b,False,64,2
+(A ⟶ B) ⟷ (¬A ∨ B),True,1,16.70385479927063,litellm:ollama/qwen2.5-coder:7b,False,67,2

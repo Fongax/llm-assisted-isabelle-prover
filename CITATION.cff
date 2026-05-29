@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "LLM-Assisted Isabelle/HOL Prover"
+message: "If you use this repository, please cite it as a research artifact."
+type: software
+authors:
+  - name: "M d"
+repository-code: "https://github.com/<your-username>/llm-assisted-isabelle-prover"
+version: "1.0.0"
+date-released: "2026-05-29"
+keywords:
+  - Isabelle/HOL
+  - theorem proving
+  - large language models
+  - Sledgehammer
+  - formal verification
+license: "MIT"

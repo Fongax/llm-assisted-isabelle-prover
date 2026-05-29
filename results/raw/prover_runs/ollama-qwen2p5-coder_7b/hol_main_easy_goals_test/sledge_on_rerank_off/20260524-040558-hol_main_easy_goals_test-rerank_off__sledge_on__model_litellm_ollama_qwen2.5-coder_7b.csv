@@ -1,0 +1,101 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+surj f ⟷ (∀y. ∃x. f x = y),True,1,42.60866975784302,litellm:ollama/qwen2.5-coder:7b,False,11,2
+(f ∘ (g ∘ h)) = ((f ∘ g) ∘ h),True,1,17.79360866546631,litellm:ollama/qwen2.5-coder:7b,False,15,2
+(a::int) + 0 = a,True,1,14.259844541549683,litellm:ollama/qwen2.5-coder:7b,False,18,2
+(∀x. P x ⟶ Q x) ⟶ ((∃x. P x) ⟶ (∃x. Q x)),True,1,19.89711332321167,litellm:ollama/qwen2.5-coder:7b,False,22,2
+map fst (zip xs ys) = take (min (length xs) (length ys)) xs,True,1,34.888399600982666,litellm:ollama/qwen2.5-coder:7b,False,33,2
+length (replicate n x) = n,True,1,14.037822246551514,litellm:ollama/qwen2.5-coder:7b,False,36,2
+(A ⟶ (B ⟶ C)) ⟶ (A ∧ B ⟶ C),True,1,15.337190389633179,litellm:ollama/qwen2.5-coder:7b,False,39,2
+min (m::nat) n + k = min (m + k) (n + k),True,1,16.237446069717407,litellm:ollama/qwen2.5-coder:7b,False,42,2
+(A - B) ∪ (A ∩ B) = A,True,1,17.479526042938232,litellm:ollama/qwen2.5-coder:7b,False,46,2
+(min (m::nat) n) + (max m n) = m + n,True,1,16.145736694335938,litellm:ollama/qwen2.5-coder:7b,False,49,2
+(0::nat) + m = m,True,1,14.452988862991333,litellm:ollama/qwen2.5-coder:7b,False,52,2
+(if A then B else B) = B,True,1,13.824503183364868,litellm:ollama/qwen2.5-coder:7b,False,55,2
+take n (take m xs) = take (min n m) xs,True,1,15.539957761764526,litellm:ollama/qwen2.5-coder:7b,False,58,2
+drop n (drop m xs) = drop (n + m) xs,True,1,15.747749328613281,litellm:ollama/qwen2.5-coder:7b,False,61,2
+(m::nat) + 0 = m,True,1,16.199381589889526,litellm:ollama/qwen2.5-coder:7b,False,64,2
+(f(x := f x)) = f,True,1,14.18567705154419,litellm:ollama/qwen2.5-coder:7b,False,67,2
+map id xs = xs,True,1,13.82879900932312,litellm:ollama/qwen2.5-coder:7b,False,70,2
+0 + (a::int) = a,True,1,14.957529067993164,litellm:ollama/qwen2.5-coder:7b,False,73,2
+min (m::nat) n ≤ m,True,1,14.938633680343628,litellm:ollama/qwen2.5-coder:7b,False,76,2
+Range (r O s) ⊆ Range s,True,1,16.63871431350708,litellm:ollama/qwen2.5-coder:7b,False,80,2
+Id O r = r,True,1,13.690656661987305,litellm:ollama/qwen2.5-coder:7b,False,83,2
+f ` (A ∩ B) ⊆ (f ` A) ∩ (f ` B),True,1,19.09622550010681,litellm:ollama/qwen2.5-coder:7b,False,87,2
+converse (r O s) = (converse s) O (converse r),True,1,17.972816705703735,litellm:ollama/qwen2.5-coder:7b,False,91,2
+"case_prod f (x,y) = f x y",True,1,14.601128816604614,litellm:ollama/qwen2.5-coder:7b,False,94,2
+length ([m..<m+n]) = n,True,1,17.3494610786438,litellm:ollama/qwen2.5-coder:7b,False,97,2
+map (g ∘ f) xs = map g (map f xs),True,1,15.661168098449707,litellm:ollama/qwen2.5-coder:7b,False,100,2
+(m::nat) ≠ 0 ⟷ (∃k. m = Suc k),True,1,24.309000968933105,litellm:ollama/qwen2.5-coder:7b,False,106,2
+x ∈ (A ∩ B) ⟷ (x ∈ A ∧ x ∈ B),True,1,15.480077743530273,litellm:ollama/qwen2.5-coder:7b,False,109,2
+-( (a::int) - b ) = b - a,True,1,15.197188377380371,litellm:ollama/qwen2.5-coder:7b,False,112,2
+Domain (Id_on A) = A,True,1,14.977994918823242,litellm:ollama/qwen2.5-coder:7b,False,115,2
+(∃x. P x ∧ Q x) ⟶ ((∃x. P x) ∧ (∃x. Q x)),True,1,19.754753351211548,litellm:ollama/qwen2.5-coder:7b,False,119,2
+x ≠ z ⟶ (f(x := y)) z = f z,True,1,15.416710138320923,litellm:ollama/qwen2.5-coder:7b,False,122,2
+rev (map f xs) = map f (rev xs),True,1,36.419822454452515,litellm:ollama/qwen2.5-coder:7b,False,135,2
+"zip (map f xs) (map g ys) = map (λp. (f (fst p), g (snd p))) (zip xs ys)",False,1,106.89949893951416,litellm:ollama/qwen2.5-coder:7b,False,144,1
+(m::nat) + Suc n = Suc (m + n),True,1,36.56829237937927,litellm:ollama/qwen2.5-coder:7b,False,147,2
+inj_on f A ⟷ (∀x∈A. ∀y∈A. f x = f y ⟶ x = y),True,1,39.788416624069214,litellm:ollama/qwen2.5-coder:7b,False,158,2
+map_sum id id s = s,True,1,30.981497049331665,litellm:ollama/qwen2.5-coder:7b,False,169,2
+filter P (rev xs) = rev (filter P xs),True,1,33.85794115066528,litellm:ollama/qwen2.5-coder:7b,False,180,2
+((a::int) + b) - c = a + (b - c),True,1,14.933775901794434,litellm:ollama/qwen2.5-coder:7b,False,183,2
+A ⊆ B ⟷ (A - B = {}),True,1,14.524779319763184,litellm:ollama/qwen2.5-coder:7b,False,186,2
+Domain (r O s) ⊆ Domain r,True,1,16.60162115097046,litellm:ollama/qwen2.5-coder:7b,False,190,2
+(g ∘ f) ` A = g ` (f ` A),True,1,17.534067392349243,litellm:ollama/qwen2.5-coder:7b,False,194,2
+(f ∘ id) = f,True,1,13.962320327758789,litellm:ollama/qwen2.5-coder:7b,False,197,2
+(id ∘ f) = f,True,1,13.95225477218628,litellm:ollama/qwen2.5-coder:7b,False,200,2
+{x∈A. P x ∨ Q x} = {x∈A. P x} ∪ {x∈A. Q x},True,1,19.94500708580017,litellm:ollama/qwen2.5-coder:7b,False,204,2
+map snd (zip xs ys) = take (min (length xs) (length ys)) ys,True,1,35.668261766433716,litellm:ollama/qwen2.5-coder:7b,False,215,2
+distinct xs ⟷ length xs = length (remdups xs),True,1,36.34150552749634,litellm:ollama/qwen2.5-coder:7b,False,226,2
+set (filter P xs) = {x ∈ set xs. P x},True,1,15.000885963439941,litellm:ollama/qwen2.5-coder:7b,False,229,2
+(∀x. P x) ⟷ (¬ (∃x. ¬ P x)),True,1,15.65669560432434,litellm:ollama/qwen2.5-coder:7b,False,232,2
+Range (Id_on A) = A,True,1,14.097328901290894,litellm:ollama/qwen2.5-coder:7b,False,235,2
+case_sum f g (Inr y) = g y,True,1,14.622651815414429,litellm:ollama/qwen2.5-coder:7b,False,238,2
+(f(x := y)) x = y,True,1,14.291067838668823,litellm:ollama/qwen2.5-coder:7b,False,241,2
+(¬ A ∧ ¬ B) ⟷ ¬(A ∨ B),True,1,17.043102025985718,litellm:ollama/qwen2.5-coder:7b,False,244,2
+set (replicate n x) ⊆ {x},True,1,16.885401487350464,litellm:ollama/qwen2.5-coder:7b,False,248,2
+(A - B) ∩ B = {},True,1,16.292525053024292,litellm:ollama/qwen2.5-coder:7b,False,252,2
+(λx. x) = id,True,1,16.20233392715454,litellm:ollama/qwen2.5-coder:7b,False,256,2
+drop n (xs @ ys) = (drop n xs) @ (drop (n - length xs) ys),True,1,17.340320825576782,litellm:ollama/qwen2.5-coder:7b,False,259,2
+(Suc m ≤ Suc n) ⟷ (m ≤ n),True,1,16.496973037719727,litellm:ollama/qwen2.5-coder:7b,False,262,2
+f ` (A ∪ B) = (f ` A) ∪ (f ` B),True,1,18.92564868927002,litellm:ollama/qwen2.5-coder:7b,False,266,2
+remdups (remdups xs) = remdups xs,True,1,15.172189712524414,litellm:ollama/qwen2.5-coder:7b,False,269,2
+(A × (B ∩ C)) = (A × B) ∩ (A × C),True,1,21.44969630241394,litellm:ollama/qwen2.5-coder:7b,False,273,2
+(A ∧ (B ∨ C)) ⟶ ((A ∧ B) ∨ (A ∧ C)),True,1,15.924002408981323,litellm:ollama/qwen2.5-coder:7b,False,276,2
+((A ⟶ C) ∧ (B ⟶ C)) ⟶ (A ∨ B ⟶ C),True,1,17.02208709716797,litellm:ollama/qwen2.5-coder:7b,False,279,2
+set (rev xs) = set xs,True,1,14.639385461807251,litellm:ollama/qwen2.5-coder:7b,False,282,2
+(m::nat) ≤ n ⟷ (∃k. m + k = n),True,1,26.925153255462646,litellm:ollama/qwen2.5-coder:7b,False,288,2
+{x∈A. True} = A,True,1,14.096084356307983,litellm:ollama/qwen2.5-coder:7b,False,291,2
+sum_list (map (λ_. (k::nat)) xs) = k * length xs,False,1,98.80275511741638,litellm:ollama/qwen2.5-coder:7b,False,300,1
+inj f ⟷ (∀x y. f x = f y ⟶ x = y),True,1,58.875311851501465,litellm:ollama/qwen2.5-coder:7b,False,311,2
+max (a::int) b + c = max (a + c) (b + c),True,1,15.718469619750977,litellm:ollama/qwen2.5-coder:7b,False,314,2
+{x∈A. False} = {},True,1,14.028411149978638,litellm:ollama/qwen2.5-coder:7b,False,317,2
+(A ∧ (B ⟶ C)) ⟶ ((A ∧ B) ⟶ C),True,1,16.35740637779236,litellm:ollama/qwen2.5-coder:7b,False,320,2
+"snd (x,y) = y",True,1,14.330682754516602,litellm:ollama/qwen2.5-coder:7b,False,323,2
+take n xs = take n (xs @ ys) ⟷ n ≤ length xs,False,1,98.01700687408447,litellm:ollama/qwen2.5-coder:7b,False,332,1
+(a::int) + (b + c) = (a + b) + c,True,1,37.773093700408936,litellm:ollama/qwen2.5-coder:7b,False,335,2
+concat (map (λx. [x]) xs) = xs,True,1,15.650445938110352,litellm:ollama/qwen2.5-coder:7b,False,338,2
+min (a::int) b + c = min (a + c) (b + c),True,1,16.893404245376587,litellm:ollama/qwen2.5-coder:7b,False,341,2
+((A ∩ B) × C) = (A × C) ∩ (B × C),True,1,20.990658283233643,litellm:ollama/qwen2.5-coder:7b,False,345,2
+max (m::nat) n + k = max (m + k) (n + k),True,1,16.465501070022583,litellm:ollama/qwen2.5-coder:7b,False,348,2
+abs ((a::int) - c) ≤ abs (a - b) + abs (b - c),True,1,18.89288353919983,litellm:ollama/qwen2.5-coder:7b,False,351,2
+m ≤ max (m::nat) n,True,1,14.585957050323486,litellm:ollama/qwen2.5-coder:7b,False,354,2
+length (zip xs ys) = min (length xs) (length ys),True,1,15.739833116531372,litellm:ollama/qwen2.5-coder:7b,False,357,2
+(r O s) O t = r O (s O t),True,1,17.743739366531372,litellm:ollama/qwen2.5-coder:7b,False,361,2
+x ∈ (A ∪ B) ⟷ (x ∈ A ∨ x ∈ B),True,1,15.907500982284546,litellm:ollama/qwen2.5-coder:7b,False,364,2
+abs ((a::int) + b) = abs (b + a),True,1,15.773713827133179,litellm:ollama/qwen2.5-coder:7b,False,367,2
+map_option id o = o,False,1,83.83861756324768,litellm:ollama/qwen2.5-coder:7b,False,379,1
+(A ⟶ B) ⟶ (¬B ⟶ ¬A),True,1,37.55189299583435,litellm:ollama/qwen2.5-coder:7b,False,383,2
+map f (concat xss) = concat (map (map f) xss),True,1,34.99422335624695,litellm:ollama/qwen2.5-coder:7b,False,394,2
+(m::nat) * (n + k) = m*n + m*k,True,1,32.177045583724976,litellm:ollama/qwen2.5-coder:7b,False,405,2
+(f = g) ⟷ (∀x. f x = g x),True,1,16.703102350234985,litellm:ollama/qwen2.5-coder:7b,False,409,2
+(m::nat) ≤ n ⟶ m ≤ n + k,True,1,14.845285177230835,litellm:ollama/qwen2.5-coder:7b,False,412,2
+((a::int) - b) + c = a + (c - b),True,1,15.925001382827759,litellm:ollama/qwen2.5-coder:7b,False,415,2
+Pow A ⊆ Pow B ⟷ A ⊆ B,True,1,19.523144483566284,litellm:ollama/qwen2.5-coder:7b,False,419,2
+{x∈A. P x ∧ Q x} = {x∈A. P x} ∩ {x∈A. Q x},True,1,19.254547834396362,litellm:ollama/qwen2.5-coder:7b,False,423,2
+converse Id = Id,True,1,13.751006841659546,litellm:ollama/qwen2.5-coder:7b,False,426,2
+r O Id = r,True,1,14.417306184768677,litellm:ollama/qwen2.5-coder:7b,False,429,2
+Id_on A ⊆ Id,True,1,16.379562854766846,litellm:ollama/qwen2.5-coder:7b,False,433,2
+"fst (x,y) = x",True,1,14.213062763214111,litellm:ollama/qwen2.5-coder:7b,False,436,2
+(A ⟶ B) ⟷ (¬A ∨ B),True,1,15.314504384994507,litellm:ollama/qwen2.5-coder:7b,False,439,2
+Pow A ∩ Pow B = Pow (A ∩ B),True,1,16.954152822494507,litellm:ollama/qwen2.5-coder:7b,False,442,2
+map Suc ([m..<m+n]) = [Suc m ..< Suc (m+n)],True,1,35.46053504943848,litellm:ollama/qwen2.5-coder:7b,False,453,2

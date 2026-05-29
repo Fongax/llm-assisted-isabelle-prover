@@ -1,0 +1,101 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+{x∈A. P x} ∪ {x∈A. ¬ P x} = A,True,1,43.69917964935303,litellm:ollama/qwen2.5-coder:7b,False,4,2
+(g ∘ f) ` (A ∩ B) ⊆ g ` (f ` A) ∩ g ` (f ` B),True,1,18.745681762695312,litellm:ollama/qwen2.5-coder:7b,False,8,2
+sum (λi. (f i + g i)::int) {..<m} = sum (λi. f i) {..<m} + sum (λi. g i) {..<m},True,1,48.77293586730957,litellm:ollama/qwen2.5-coder:7b,False,21,2
+finite A ⟹ card (A ∩ B) + card (A - B) = card A - card (A ∩ (B - A)),False,2,207.75635862350464,litellm:ollama/qwen2.5-coder:7b,False,37,2
+(f ∘ g) ∘ h = f ∘ (g ∘ h),True,1,18.72026014328003,litellm:ollama/qwen2.5-coder:7b,False,41,2
+converse (rtrancl r) = rtrancl (converse r),True,1,34.616843461990356,litellm:ollama/qwen2.5-coder:7b,False,52,2
+(∀x. P x ⟷ Q x) ⟶ ((∀x. R x ⟶ P x) ⟷ (∀x. R x ⟶ Q x)),True,1,17.358665704727173,litellm:ollama/qwen2.5-coder:7b,False,55,2
+map f (take n xs) = take n (map f xs),True,1,34.5526967048645,litellm:ollama/qwen2.5-coder:7b,False,66,2
+finite A ⟹ finite B ⟹ card (A × B - C) = card (A × B) - card (C ∩ (A × B)),False,2,182.09948587417603,litellm:ollama/qwen2.5-coder:7b,False,86,2
+set (takeWhile P xs) ⊆ set xs,True,1,38.76020693778992,litellm:ollama/qwen2.5-coder:7b,False,97,2
+rev (drop n xs) = take (length xs - n) (rev xs) ⟷ n ≤ length xs,False,1,97.44118595123291,litellm:ollama/qwen2.5-coder:7b,False,107,1
+finite A ⟹ finite B ⟹ A ∩ B = {} ⟹ card (A ∪ B) = card A + card B,True,1,651.9641513824463,litellm:ollama/qwen2.5-coder:7b,False,116,2
+trans r ⟹ r O r ⊆ r,True,1,54.829602003097534,litellm:ollama/qwen2.5-coder:7b,False,127,2
+"acyclic r ⟷ (∀x. (x,x) ∉ trancl r)",True,1,34.359079360961914,litellm:ollama/qwen2.5-coder:7b,False,138,2
+rev (take n xs) = drop (length xs - n) (rev xs) ⟷ n ≤ length xs,False,2,221.40752696990967,litellm:ollama/qwen2.5-coder:7b,False,158,2
+({x. P x} ∩ {x. Q x}) = {x. P x ∧ Q x},True,1,21.05757164955139,litellm:ollama/qwen2.5-coder:7b,False,162,2
+trancl Id = Id,True,1,36.60378456115723,litellm:ollama/qwen2.5-coder:7b,False,173,2
+set [m..<n] ∩ set [n..<p] = {},True,1,17.185284852981567,litellm:ollama/qwen2.5-coder:7b,False,176,2
+¬ i < length xs ⟹ nth (xs @ ys) i = nth ys (i - length xs),True,1,37.91611289978027,litellm:ollama/qwen2.5-coder:7b,False,187,2
+vimage f (A ∩ B) = vimage f A ∩ vimage f B,True,1,17.970508337020874,litellm:ollama/qwen2.5-coder:7b,False,190,2
+finite I ⟹ (∀i∈I. finite (F i)) ⟹ (∀i∈I. ∀j∈I. i≠j ⟶ F i ∩ F j = {}) ⟹ card (⋃i∈I. F i) = (∑i∈I. card (F i)),False,1,136.81750416755676,litellm:ollama/qwen2.5-coder:7b,False,202,1
+finite A ⟹ (∀x∈A. f x = g x) ⟶ sum f A = (sum g A::int),True,1,48.45143365859985,litellm:ollama/qwen2.5-coder:7b,False,205,2
+finite A ⟹ inj_on f A ⟹ card (SIGMA x∈A. {f x}) = card A,False,1,121.40534377098083,litellm:ollama/qwen2.5-coder:7b,False,219,1
+(a::int) - b = a + (-b),True,1,40.805068016052246,litellm:ollama/qwen2.5-coder:7b,False,222,2
+rotate (length xs mod (length xs)) xs = xs,True,1,20.554776906967163,litellm:ollama/qwen2.5-coder:7b,False,225,2
+converse (trancl r) = trancl (converse r),True,1,36.45403718948364,litellm:ollama/qwen2.5-coder:7b,False,236,2
+zip (take n xs) (take n ys) = take n (zip xs ys),True,1,36.919617891311646,litellm:ollama/qwen2.5-coder:7b,False,247,2
+finite A ⟹ finite B ⟹ A ⊆ B ⟹ card B = card A + card (B - A),True,1,41.60426664352417,litellm:ollama/qwen2.5-coder:7b,False,258,2
+length (zip xs ys) = min (length xs) (length ys),True,1,21.07745099067688,litellm:ollama/qwen2.5-coder:7b,False,261,2
+finite A ⟹ card (A × {x}) = card A,True,1,20.9131076335907,litellm:ollama/qwen2.5-coder:7b,False,264,2
+finite A ⟹ card (A ∪ B) = card A + card (B - A),False,2,201.78820133209229,litellm:ollama/qwen2.5-coder:7b,False,282,2
+rtrancl r O rtrancl r = rtrancl r,True,1,17.161922693252563,litellm:ollama/qwen2.5-coder:7b,False,285,2
+inj f ⟹ inv f ∘ f = id,True,1,16.688513040542603,litellm:ollama/qwen2.5-coder:7b,False,288,2
+(λx. x) ∘ f = f,True,1,20.908843755722046,litellm:ollama/qwen2.5-coder:7b,False,292,2
+nth (map f xs) i = f (nth xs i) ⟷ i < length xs,False,2,215.13350987434387,litellm:ollama/qwen2.5-coder:7b,False,313,2
+"{(x,y)∈A×B. P x ∧ Q y} = (A ∩ {x. P x}) × (B ∩ {y. Q y})",True,1,23.373165369033813,litellm:ollama/qwen2.5-coder:7b,False,317,2
+(min (a::int) b) + (max a b) = a + b,True,1,17.653629541397095,litellm:ollama/qwen2.5-coder:7b,False,320,2
+Range (r O s) ⊆ Range s,True,1,20.524152040481567,litellm:ollama/qwen2.5-coder:7b,False,324,2
+map fst (zip xs ys) = take (min (length xs) (length ys)) xs,True,1,37.44575309753418,litellm:ollama/qwen2.5-coder:7b,False,335,2
+finite A ⟹ card {x∈A. P x} + card {x∈A. ¬ P x} = card A,False,1,171.1883783340454,litellm:ollama/qwen2.5-coder:7b,False,359,1
+finite A ⟹ card {x∈A. x∈B} = card (A ∩ B),False,2,197.19296145439148,litellm:ollama/qwen2.5-coder:7b,False,375,2
+finite A ⟹ card (insert x A) = (if x∈A then card A else Suc (card A)),True,1,40.13381814956665,litellm:ollama/qwen2.5-coder:7b,False,386,2
+inj_on f A ⟹ vimage f (f ` A) ∩ A = A,True,1,20.044374465942383,litellm:ollama/qwen2.5-coder:7b,False,390,2
+f ` (A - B) ⊆ (f ` A) - (f ` (A ∩ B)),False,2,181.20348167419434,litellm:ollama/qwen2.5-coder:7b,False,410,2
+finite A ⟹ sum (λx. (if x∈A then (0::int) else 0)) A = 0,True,1,19.92264437675476,litellm:ollama/qwen2.5-coder:7b,False,413,2
+(g ∘ f) x = g (f x),True,1,16.71925663948059,litellm:ollama/qwen2.5-coder:7b,False,416,2
+(∀x. f x = g x) ⟹ f = g,True,1,19.022981643676758,litellm:ollama/qwen2.5-coder:7b,False,420,2
+surj f ⟹ f ∘ inv f = id,True,1,38.081570625305176,litellm:ollama/qwen2.5-coder:7b,False,431,2
+(∃!x. P x) ⟶ (∀x y. P x ∧ P y ⟶ x = y),True,1,20.77159070968628,litellm:ollama/qwen2.5-coder:7b,False,435,2
+finite A ⟹ card ({x} × A) = card A,True,1,21.6050546169281,litellm:ollama/qwen2.5-coder:7b,False,438,2
+(min (m::nat) n) + (max m n) = m + n,True,1,17.524229049682617,litellm:ollama/qwen2.5-coder:7b,False,441,2
+({x. P x} ∪ {x. Q x}) = {x. P x ∨ Q x},True,1,21.522480487823486,litellm:ollama/qwen2.5-coder:7b,False,445,2
+(∀x. P x) ⟶ ((∀x. Q x ⟶ R x) ⟶ (∀x. P x ∧ Q x ⟶ R x)),True,1,30.362125396728516,litellm:ollama/qwen2.5-coder:7b,False,448,2
+Domain (r O s) ⊆ Domain r,True,1,20.584729194641113,litellm:ollama/qwen2.5-coder:7b,False,452,2
+finite A ⟹ sum (λx. (if x∈B then (1::nat) else 0)) A = card (A ∩ B),False,2,234.7853500843048,litellm:ollama/qwen2.5-coder:7b,False,471,2
+vimage f (A ∪ B) = vimage f A ∪ vimage f B,True,1,18.704891681671143,litellm:ollama/qwen2.5-coder:7b,False,474,2
+inj_on f A ⟹ x∈A ⟹ inv_into A f (f x) = x,True,1,21.87272047996521,litellm:ollama/qwen2.5-coder:7b,False,477,2
+sum_list (map f (xs @ ys)) = sum_list (map f xs) + sum_list (map f ys),True,1,19.607306480407715,litellm:ollama/qwen2.5-coder:7b,False,480,2
+finite A ⟹ card (A - {x}) = (if x∈A then card A - 1 else card A),True,1,19.214906692504883,litellm:ollama/qwen2.5-coder:7b,False,483,2
+(λx. c) ∘ f = (λ_. c),True,1,21.184983730316162,litellm:ollama/qwen2.5-coder:7b,False,487,2
+"finite A ⟹ finite B ⟹ card { (x,y)∈A×B. P x ∧ Q y } ≤ card A * card B",False,1,149.70110440254211,litellm:ollama/qwen2.5-coder:7b,False,505,1
+(if A then (B ⟶ C) else True) ⟷ (¬ A ∨ (B ⟶ C)),True,1,41.06242299079895,litellm:ollama/qwen2.5-coder:7b,False,508,2
+(∀x. f x = g x) ⟶ (∃!x. f x = a) ⟶ (∃!x. g x = a),True,1,20.72944164276123,litellm:ollama/qwen2.5-coder:7b,False,511,2
+(∀x∈A. f x = g x) ⟹ f ` A = g ` A,True,1,19.867419242858887,litellm:ollama/qwen2.5-coder:7b,False,514,2
+xs ≠ [] ⟹ nth (rev xs) i = nth xs (length xs - Suc i) ⟷ i < length xs,False,2,230.58207201957703,litellm:ollama/qwen2.5-coder:7b,False,534,2
+finite A ⟹ sum (λx. c::int) A = c * int (card A),True,1,18.514843463897705,litellm:ollama/qwen2.5-coder:7b,False,537,2
+set (dropWhile P xs) ⊆ set xs,True,1,38.05706715583801,litellm:ollama/qwen2.5-coder:7b,False,548,2
+{x∈A. P x} ∩ {x∈A. ¬ P x} = {},True,1,21.990121364593506,litellm:ollama/qwen2.5-coder:7b,False,552,2
+sum (λi. (k::nat)) {..<m} = m * k,True,1,18.12266707420349,litellm:ollama/qwen2.5-coder:7b,False,555,2
+finite A ⟹ sum (λx. f x + g x::int) A = sum f A + sum g A,False,2,180.6482744216919,litellm:ollama/qwen2.5-coder:7b,False,574,2
+(∀x. P x ⟶ Q x) ∧ (∃x. P x) ⟶ (∃x. Q x),True,1,21.717104196548462,litellm:ollama/qwen2.5-coder:7b,False,578,2
+sum (λ_. (1::nat)) {..<m} = m,True,1,20.05808973312378,litellm:ollama/qwen2.5-coder:7b,False,581,2
+r ⊆ s ⟹ trancl r ⊆ trancl s,True,1,36.193201541900635,litellm:ollama/qwen2.5-coder:7b,False,592,2
+length [m..<n] + length [n..<p] = length [m..<p],False,2,235.09110188484192,litellm:ollama/qwen2.5-coder:7b,False,611,2
+Domain (converse r) = Range r,True,1,37.79859900474548,litellm:ollama/qwen2.5-coder:7b,False,614,2
+foldr f b (xs @ ys) = foldr f (foldr f b ys) xs,False,2,211.96106243133545,litellm:ollama/qwen2.5-coder:7b,False,635,2
+finite A ⟹ finite B ⟹ card ((A - C) × (B - D)) = (card A - card (A ∩ C)) * (card B - card (B ∩ D)),False,2,213.7914469242096,litellm:ollama/qwen2.5-coder:7b,False,653,2
+map f (drop n xs) = drop n (map f xs),True,1,35.95086431503296,litellm:ollama/qwen2.5-coder:7b,False,664,2
+zip (drop n xs) (drop n ys) = drop n (zip xs ys),True,1,36.743085861206055,litellm:ollama/qwen2.5-coder:7b,False,675,2
+length (takeWhile P xs) + length (dropWhile P xs) = length xs,True,1,39.369701623916626,litellm:ollama/qwen2.5-coder:7b,False,686,2
+f ∘ (λx. x) = f,True,1,24.287926197052002,litellm:ollama/qwen2.5-coder:7b,False,690,2
+finite A ⟹ card (SIGMA x∈A. F x) = sum (λx. card (F x)) A,False,1,93.46059656143188,litellm:ollama/qwen2.5-coder:7b,False,700,1
+finite A ⟹ card (A ∩ B) = card A - card (A - B),True,1,64.37703609466553,litellm:ollama/qwen2.5-coder:7b,False,711,2
+foldl f a (xs @ ys) = foldl f (foldl f a xs) ys,True,1,18.209193229675293,litellm:ollama/qwen2.5-coder:7b,False,714,2
+abs ((a::int) - c) ≤ abs (a - b) + abs (b - c),True,1,21.381516218185425,litellm:ollama/qwen2.5-coder:7b,False,717,2
+(if A then f x else f y) = f (if A then x else y),True,1,17.63480234146118,litellm:ollama/qwen2.5-coder:7b,False,720,2
+Range (converse r) = Domain r,True,1,16.158247709274292,litellm:ollama/qwen2.5-coder:7b,False,723,2
+nth (xs @ ys) i = nth xs i ⟷ i < length xs,False,2,248.04197192192078,litellm:ollama/qwen2.5-coder:7b,False,744,2
+finite A ⟹ card {x∈A. P x ∧ Q x} + card {x∈A. P x ∧ ¬ Q x} = card {x∈A. P x},False,2,215.07786226272583,litellm:ollama/qwen2.5-coder:7b,False,759,2
+sum_list (replicate n k) = n * k,True,2,174.3506088256836,litellm:ollama/qwen2.5-coder:7b,False,785,3
+map snd (zip xs ys) = take (min (length xs) (length ys)) ys,True,1,37.678096532821655,litellm:ollama/qwen2.5-coder:7b,False,796,2
+finite A ⟹ inj_on f A ⟹ card (f ` A) = card A,True,1,37.19291710853577,litellm:ollama/qwen2.5-coder:7b,False,807,2
+finite A ⟹ sum (λx. (if P x then (1::nat) else 0)) A = card {x∈A. P x},False,1,120.64500308036804,litellm:ollama/qwen2.5-coder:7b,False,820,1
+finite A ⟹ card (A ∪ B) + card (A ∩ B) = card A + card B,False,2,181.57689905166626,litellm:ollama/qwen2.5-coder:7b,False,830,2
+finite A ⟹ inj_on f A ⟹ sum (λx. (1::nat)) (f ` A) = card A,True,1,43.80031442642212,litellm:ollama/qwen2.5-coder:7b,False,841,2
+finite A ⟹ finite B ⟹ (A ⊆ B) ⟷ (card A = card (A ∩ B)),False,2,215.27230167388916,litellm:ollama/qwen2.5-coder:7b,False,861,2
+(map Suc [m..<n]) = [Suc m ..< Suc n],True,1,36.8160138130188,litellm:ollama/qwen2.5-coder:7b,False,872,2
+(∃x. P x ∧ (Q x ⟶ R x)) ⟶ ((∃x. P x ∧ Q x) ⟶ (∃x. R x)),False,2,239.9281189441681,litellm:ollama/qwen2.5-coder:7b,False,892,2
+finite A ⟹ card ((A × B) ∩ (C × D)) = card (A ∩ C) * card (B ∩ D),True,1,65.56964945793152,litellm:ollama/qwen2.5-coder:7b,False,903,2
+rotate (i + j) xs = rotate i (rotate j xs),True,1,36.12804126739502,litellm:ollama/qwen2.5-coder:7b,False,914,2
