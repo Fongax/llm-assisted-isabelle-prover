@@ -4,7 +4,7 @@ message: "If you use this repository, please cite it as a research artifact."
 type: software
 authors:
   - name: "Issey S, Zhe Hou"
-repository-code: "https://github.com/<your-username>/llm-assisted-isabelle-prover"
+repository-code: "https://github.com/Fongax/llm-assisted-isabelle-prover"
 version: "1.0.0"
 date-released: "2026-05-29"
 keywords:
