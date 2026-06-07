@@ -3,7 +3,7 @@ title: "LLM-Assisted Isabelle/HOL Prover"
 message: "If you use this repository, please cite it as a research artifact."
 type: software
 authors:
-  - name: "M d"
+  - name: "Issey S", "Zhe Hou"
 repository-code: "https://github.com/<your-username>/llm-assisted-isabelle-prover"
 version: "1.0.0"
 date-released: "2026-05-29"
